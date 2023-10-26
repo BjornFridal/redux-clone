@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redux Clone</title>
+  <style>
+    body {
+      padding: 40px 30px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    main {
+      gap: 40px;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+    pre {
+      font-family: monospace;
+      font-size: 12px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    fieldset {
+      border: 2px dashed #E4CCFF;
+      border-radius: 5px;
+      display: inline-flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 8px 10px;
+      position: relative;
+    }
+
+    fieldset legend {
+      font-size: 12px;
+      position: absolute;
+      top: -20px;
+      left: 0px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    article img {
+      height: 96px;
+      margin: 0 auto;
+      width: 96px;
+    }
+
+    button {
+      background-color: #c56cf0;
+      border-radius: 100px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      margin: auto;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding: 20px 3px;
+      width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
