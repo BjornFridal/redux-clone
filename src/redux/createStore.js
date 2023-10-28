@@ -1,4 +1,8 @@
-export const createStore = (reducer, initialState) => {
+export const createStore = (reducer, initialState, middleware) => {
+  if (typeof middleware !== 'undefined') {
+    return middleware(createStore)(reducer, initialState);
+  }
+
   const store = {
     state: initialState,
     listeners: [],
